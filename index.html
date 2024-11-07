@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple-like Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Search for a city">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="weather-container" class="hidden">
+            <div class="background-image"></div>
+            <div class="content">
+                <div class="current-weather">
+                    <h1 id="city-name"></h1>
+                    <h2 id="temperature"></h2>
+                    <p id="weather-description"></p>
+                    <div class="high-low">
+                        <span id="temp-high"></span> | <span id="temp-low"></span>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail">
+                        <span class="label">Feels Like</span>
+                        <span id="feels-like"></span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Humidity</span>
+                        <span id="humidity"></span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Wind</span>
+                        <span id="wind-speed"></span>
+                    </div>
+                    <div class="detail">
+                        <span class="label">Pressure</span>
+                        <span id="pressure"></span>
+                    </div>
+                </div>
+                <div class="hourly-forecast">
+                    <h3>Hourly Forecast</h3>
+                    <div id="hourly-container"></div>
+                </div>
+                <div class="daily-forecast">
+                    <h3>7-Day Forecast</h3>
+                    <div id="daily-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
